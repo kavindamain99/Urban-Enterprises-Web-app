@@ -1,85 +1,145 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<html lang="en">
+  <head>
     <title>URBAN</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Stylesheet -->
+    <!-- Favicon & Styles -->
     <link rel="icon" href="/images/auto_favi.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
 
-    {{!-- Icons --}}
-    <script src="https://kit.fontawesome.com/f7b393d83e.js" crossorigin="anonymous"></script>
+    <!-- Fonts & Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f7b393d83e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
+  </head>
 
-</head>
-
-<body class="page-top">
+  <body>
 
     <!-- Navbar -->
-    <section id="navigation">
+    <section id="navigation" class="bg-dark">
+      <div class="container-fluid" id="nav-container">
+        <nav class="navbar navbar-dark navbar-expand-md">
+          <a class="navbar-brand" href="/">
+            <img
+              src="/images/t1.png"
+              alt="Logo"
+              style="width: 120px; height: auto;"
+            />
+            <span
+              style="font-size: 1.5rem; font-weight: bold; color: white;"
+            >Urban Enterprises</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="container-fluid" id="nav-container">
-
-            <nav class="navbar navbar-dark navbar-expand-md">
-            <a class="navbar-brand" href="/">
-                <img src="/images/t1.png" alt="Logo" style="width: 120px; height: auto;">
-                <span style="font-size: 1.5rem; font-weight: bold; color: white;">Urban Enterprises</span>
-            </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-        </div>
-
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="/">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="/">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </section>
 
+    <!-- Main Page Content -->
+    <main class="pb-5">
+      {{{body}}}
+    </main>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-4 pb-3">
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="text-uppercase mb-3">Urban Enterprises</h5>
+            <p>Dehiwala, Sri Lanka</p>
+            <p>Email:
+              <a
+                href="mailto:info@urbanenterprises.lk"
+                class="text-white"
+              >info@urbanenterprises.lk</a></p>
+          </div>
+          <div class="col-md-6 text-md-right mt-3 mt-md-0">
+            <a
+              href="https://wa.me/"
+              class="btn btn-outline-light btn-sm mx-1"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+              WhatsApp
+            </a>
+            <a
+              href="https://www.facebook.com/uesrilanka"
+              class="btn btn-outline-light btn-sm mx-1"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-f"></i>
+              Facebook
+            </a>
+          </div>
+        </div>
+        <hr class="bg-white" />
+        <div class="text-center">&copy; 2025 Urban Enterprises. All rights
+          reserved.</div>
+      </div>
+    </footer>
 
-
-    {{{body}}}
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    {{!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script> --}}
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
     <script src="/javascripts/ev_cars.js"></script>
     <script src="/javascripts/gas_cars.js"></script>
 
-</body>
-
+  </body>
 </html>
