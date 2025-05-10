@@ -1,0 +1,91 @@
+<table>
+  <tr>
+    <div class="bg-dark text-white py-3 px-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <h3 class="mb-0">Vehicle List</h3>
+        <div>
+          <a class="btn btn-light mr-2" href="addgas">Add New Vehicle</a>
+          <a class="btn btn-light" href="/admin/admin_index">Back to dashboard</a>
+          <a class="btn btn-light" href="/admin/home">Back to Home</a>
+        </div>
+      </div>
+    </div>
+
+  </tr>
+</table>
+
+<div class="table-responsive">
+  <table
+    class="table table-bordered table-hover table-sm bg-white shadow-sm rounded mt-2"
+  >
+    <thead class="thead-dark">
+      <tr>
+        <th class="text-center">Command</th>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Version</th>
+        <th>Year</th>
+        <th>Price</th>
+        <th>Price (Text)</th>
+        <th>Top Speed</th>
+        <th>0–60 Time</th>
+        <th>Mileage</th>
+        <th>Engine</th>
+        <th>Cylinders</th>
+        <th>Gearbox</th>
+        <th>Transmission</th>
+        <th>Colour</th>
+        <th>Interior</th>
+        <th>Body</th>
+        <th>Drivetrain</th>
+        <th>Wheel</th>
+        <th>Description</th>
+        <th>Safety</th>
+        <th>Technology</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each list}}
+        <tr>
+          <td class="text-center">
+            <a
+              class="btn btn-outline-danger btn-sm"
+              href="deletegas/{{this._id}}"
+              onclick="return confirm('Are you sure to delete this record?');"
+            >
+              Delete
+            </a>
+          </td>
+          <td>
+            <img
+              src="{{this.imagePath}}"
+              alt="Gas Car Image"
+              class="img-thumbnail"
+              style="max-width: 100px;"
+            />
+          </td>
+          <td>{{this.title}}</td>
+          <td>{{this.t2}}</td>
+          <td>{{this.year}}</td>
+          <td>{{this.price}}</td>
+          <td>{{this.priceStr}}</td>
+          <td>{{this.topspeed}}</td>
+          <td>{{this.time60}}</td>
+          <td>{{this.mileage}}</td>
+          <td>{{this.engine}}</td>
+          <td>{{this.cyl}}</td>
+          <td>{{this.gearbox}}</td>
+          <td>{{this.transmission}}</td>
+          <td>{{this.colour}}</td>
+          <td>{{this.interior}}</td>
+          <td>{{this.body}}</td>
+          <td>{{this.drivetrain}}</td>
+          <td>{{this.wheel}}</td>
+          <td style="white-space: pre-wrap;">{{this.description}}</td>
+          <td style="white-space: pre-wrap;">{{this.safety}}</td>
+          <td style="white-space: pre-wrap;">{{this.technology}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
