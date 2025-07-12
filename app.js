@@ -99,6 +99,10 @@ app.post("/customer", async (req, res) => {
 app.get("/contact", (req, res) => {
   res.render("contact");
 });
+
+app.get("/about", (req, res) => {
+  res.render("about");
+});
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
