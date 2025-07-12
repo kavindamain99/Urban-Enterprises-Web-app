@@ -55,38 +55,6 @@
                 >Manual</button></a>
             </div><br />
 
-            <div class="Drivetrain">
-              Drivetrain<br />
-              <a href="/gas/filter/?drive=FWD"><button
-                  type="button"
-                  class="btn btn-dark btn-sm"
-                >FWD</button></a>
-              <a href="/gas/filter/?drive=RWD"><button
-                  type="button"
-                  class="btn btn-dark btn-sm"
-                >RWD</button></a>
-              <a href="/gas/filter/?drive=AWD"><button
-                  type="button"
-                  class="btn btn-dark btn-sm"
-                >AWD</button></a>
-            </div><br />
-
-            <div class="Cyl">
-              Cylinders<br />
-              <a href="/gas/filter/?cyl=4"><button
-                  type="button"
-                  class="btn btn-dark btn-sm"
-                >4</button></a>
-              <a href="/gas/filter/?cyl=6"><button
-                  type="button"
-                  class="btn btn-dark btn-sm"
-                >6</button></a>
-              <a href="/gas/filter/?cyl=8"><button
-                  type="button"
-                  class="btn btn-dark btn-sm"
-                >8</button></a>
-            </div><br />
-
           </ul>
         </div>
       </div>
@@ -159,22 +127,57 @@
 
             <div class="info-first">
               <div class="info-first-cards">
-                <p class="first-specs">Top Speed</p>
-                <svg style="width:24px;height:24px">
-                  <path
-                    fill="currentColor"
-                    d="M12,16A3,3 0 0,1 9,13C9,11.88 9.61,10.9 10.5,10.39L20.21,4.77L14.68,14.35C14.18,15.33 13.17,16 12,16M12,3C13.81,3 15.5,3.5 16.97,4.32L14.87,5.53C14,5.19 13,5 12,5A8,8 0 0,0 4,13C4,15.21 4.89,17.21 6.34,18.65H6.35C6.74,19.04 6.74,19.67 6.35,20.06C5.96,20.45 5.32,20.45 4.93,20.07V20.07C3.12,18.26 2,15.76 2,13A10,10 0 0,1 12,3M22,13C22,15.76 20.88,18.26 19.07,20.07V20.07C18.68,20.45 18.05,20.45 17.66,20.06C17.27,19.67 17.27,19.04 17.66,18.65V18.65C19.11,17.2 20,15.21 20,13C20,12 19.81,11 19.46,10.1L20.67,8C21.5,9.5 22,11.18 22,13Z"
-                  />
-                </svg><b>{{this.topspeed}} </b>mph
+                <p class="first-specs">Engine</p>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 226 226"
+                  style=" fill:#000000;"
+                >
+                  <g
+                    fill="none"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <path d="M0,226v-226h226v226z" fill="none"></path>
+                    <g fill="currentColor">
+                      <path
+                        d="M103.58333,28.25v28.25h28.25v9.41667h-37.66667l-28.25,28.25h-28.25v18.83333h-9.41667v-18.83333h-28.25v75.33333h28.25v-18.83333h9.41667v18.83333h28.25l28.25,28.25h56.5l37.66667,-37.66667v-9.41667h9.41667v18.83333h28.25v-75.33333h-28.25v18.83333h-9.41667v-47.08333h-37.66667v-9.41667h28.25v-28.25zM141.25,94.16667l-8.53385,28.25h17.95052l-37.66667,37.66667l7.65104,-27.36719h-17.06771z"
+                      >
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                {{this.engine}}
+                CC
+
               </div>
               <div class="info-first-cards">
-                <p class="first-specs">0-60mph</p>
-                <svg style="width:24px;height:24px">
+                <p class="first-specs">color</p>
+
+                <svg style=" width:26px;height:26px" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
-                    d="M19.03 7.39L20.45 5.97C20 5.46 19.55 5 19.04 4.56L17.62 6C16.07 4.74 14.12 4 12 4C7.03 4 3 8.03 3 13S7.03 22 12 22C17 22 21 17.97 21 13C21 10.88 20.26 8.93 19.03 7.39M13 14H11V7H13V14M15 1H9V3H15V1Z"
+                    d="M10,4H12V6H10V4M7,3H9V5H7V3M7,6H9V8H7V6M6,8V10H4V8H6M6,5V7H4V5H6M6,2V4H4V2H6M13,22A2,2 0 0,1 11,20V10A2,2 0 0,1 13,8V7H14V4H17V7H18V8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H13M13,10V20H18V10H13Z"
                   />
-                </svg><b>{{this.time60}} </b>s
+                </svg>
+                {{this.colour}}
+
               </div>
               <div class="info-first-cards">
                 <p class="first-specs">Mileage</p>
@@ -195,43 +198,6 @@
 
               <div class="col-sm info-second-col-gas">
                 <ul>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      x="0px"
-                      y="0px"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 226 226"
-                      style=" fill:#000000;"
-                    >
-                      <g
-                        fill="none"
-                        fill-rule="nonzero"
-                        stroke="none"
-                        stroke-width="1"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-dasharray=""
-                        stroke-dashoffset="0"
-                        font-family="none"
-                        font-weight="none"
-                        font-size="none"
-                        text-anchor="none"
-                        style="mix-blend-mode: normal"
-                      >
-                        <path d="M0,226v-226h226v226z" fill="none"></path>
-                        <g fill="currentColor">
-                          <path
-                            d="M103.58333,28.25v28.25h28.25v9.41667h-37.66667l-28.25,28.25h-28.25v18.83333h-9.41667v-18.83333h-28.25v75.33333h28.25v-18.83333h9.41667v18.83333h28.25l28.25,28.25h56.5l37.66667,-37.66667v-9.41667h9.41667v18.83333h28.25v-75.33333h-28.25v18.83333h-9.41667v-47.08333h-37.66667v-9.41667h28.25v-28.25zM141.25,94.16667l-8.53385,28.25h17.95052l-37.66667,37.66667l7.65104,-27.36719h-17.06771z"
-                          >
-                          </path>
-                        </g>
-                      </g>
-                    </svg>
-                    {{this.engine}}L Turbo Engine
-                  </li>
 
                   <li>
                     <svg
@@ -263,8 +229,7 @@
                         </g>
                       </g>
                     </svg>
-                    {{this.gearbox}}
-                    Transmission
+                    {{this.t2}}
 
                   </li>
 
@@ -297,15 +262,7 @@
               <div class="col-sm info-second-col-gas">
 
                 <ul>
-                  <li>
-                    <svg style=" width:26px;height:26px" viewBox="0 0 24 24">
-                      <path
-                        fill="currentColor"
-                        d="M10,4H12V6H10V4M7,3H9V5H7V3M7,6H9V8H7V6M6,8V10H4V8H6M6,5V7H4V5H6M6,2V4H4V2H6M13,22A2,2 0 0,1 11,20V10A2,2 0 0,1 13,8V7H14V4H17V7H18V8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H13M13,10V20H18V10H13Z"
-                      />
-                    </svg>
-                    {{this.colour}}
-                  </li>
+
                   <li>
                     <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                       <path

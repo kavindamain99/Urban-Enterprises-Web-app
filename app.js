@@ -96,7 +96,9 @@ app.post("/customer", async (req, res) => {
   const user_res = await user.save();
   console.log(user_res);
 });
-
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));

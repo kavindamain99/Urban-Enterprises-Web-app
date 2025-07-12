@@ -114,17 +114,15 @@ router.post(
       year: req.body.year,
       price: req.body.price,
       priceStr: req.body.priceStr,
-      topspeed: req.body.topspeed,
-      time60: req.body.time60,
+
       mileage: req.body.mileage,
       engine: req.body.engine,
-      cyl: req.body.cyl,
-      gearbox: req.body.gearbox,
+
       transmission: req.body.transmission,
       colour: req.body.colour,
       interior: req.body.interior,
       body: req.body.body,
-      drivetrain: req.body.drivetrain,
+
       wheel: req.body.wheel,
       description: req.body.description,
       safety: req.body.safety,
